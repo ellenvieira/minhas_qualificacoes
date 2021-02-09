@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - BootStrap</title>
+
+    <!-- Chamada da biblioteca CSS do Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Chamada da biblioteca JS do Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Como fazer a chamada de uma biblioteca em CSS-->
+    <!--<link rel="stylesheet" href="../css/estilos.css">-->
+</head>
+
+<body>
+    <!-- Abertura do container para guardar a página-->
+    <div class="container">
+        <!-- Criando uma linha dentro do BootStrap-->
+        <div class="row">
+            <!-- Criando colunas para o menu da página-->
+            <div class="col-lg-3 col-md-2 col-sm-3 div1">Home</div>
+            <div class="col-lg-5 col-md-5 col-sm-3 div2">Produtos</div>
+            <div class="col-lg-2 col-md-3 col-sm-3 div3">Link</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 div4">Contatos</div>
+
+        </div>
+        <!-- inserir uma linha-->
+        <div class="row">
+            <br>
+        </div>
+        <!-- inserir um formulário-->
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 div1"></div>
+            <div class="col-lg-10 col-md-10 col-sm-10 div2">    <form id="formulário_contato" method="POST">
+                <!--fieldset: permite criar uma caixa para inserir a estrutura do formulário-->
+                <fieldset>
+                    <!--legend: inserir uma legenda no formulário-->
+                    <legend><b>Preencha nosso formulário para fazer um dos nossos cursos ou tirar dúvidas</b></legend><br><br>
+            
+                    <label>Nome Aluno:</label><input type="text" name="nome" required><br><br>
+                    <label>Email Aluno:</label><input type="email" name="email" required><br><br>
+                    <label>Senha:</label><input type="password" name="senha" required><br><br>
+                    <label>Gênero:</label>
+                    <input type="radio" name="opcao_radio" value="Feminino"/> Feminino
+                    <input type="radio" name="opcao_radio" value="Masculino"/> Masculino
+                    <input type="radio" name="opcao_radio" value="Outros"/> Outros
+                    <input type="radio" name="opcao_radio" value="Não Informado"/> Não Informado<br><br>
+                    <label>Escolha o curso desejado: </label> 
+                    <select required>
+                        <option value=""></option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="JS">JavaScript</option>
+                        <option value="XML">XML</option>
+                    </select><br><br>
+            
+                    <label>Escolha o período: </label> 
+                    <input type="checkbox"  name="OPCAO" value="manhã"> Manhã
+                    <input type="checkbox"  name="OPCAO" value="tarde"> Tarde
+                    <input type="checkbox"  name="OPCAO" value="noite"> Noite<br><br>
+            
+                    <label>Qual data deseja fazer </label> <input type="date" value="data"><br><br>
+                    <label>Mensagem </label> <br><br>
+                    <textarea name="mensagem" cols="40" rows="3"></textarea><br><br>
+                    <label>Para realizar o nosso curso envie um comprovante de residência </label> <br><br>
+                    <imput type="file" value="caminho arquivo"><br><br>
+            
+                    <input type="submit" value="Enviar"><br><br>
+                
+                </fieldset>
+                </form>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 div3"></div>           
+        </div>
+    </div>
+    
+    </body>
+</html>
